@@ -10,7 +10,7 @@ public static class MortyRunner
 
         string parentFolder = Directory.GetParent(AppContext.BaseDirectory)!.Parent!.Parent!.Parent!.Parent!.FullName;
         string dllPath = Path.Combine(parentFolder, $"{morty}Morty", "bin", "Debug", "net8.0", $"{morty}Morty.dll");
-        Console.WriteLine(dllPath);
+
 
 
         var psi = new ProcessStartInfo
